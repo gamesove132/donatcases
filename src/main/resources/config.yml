@@ -1,0 +1,23 @@
+# DonateCases Configuration
+prefix: "&8[&6DonateCases&8] "
+
+# Permission group for LuckPerms integration
+# These groups will be assigned when player opens timed cases
+luckperms:
+  timed_long_group: "vip"       # Group for 3-week privilege
+  timed_short_group: "helper"   # Group for 3-day privilege
+
+# Multiverse world restrictions
+# If empty - cases work in all worlds
+# If set - only these worlds allow case opening
+allowed_worlds: []
+# allowed_worlds:
+#   - world
+#   - world_nether
+
+# Case definitions
+# Created via /case create <name> <type> or manually here
+cases: {}
+
+# Active timed permissions: uuid -> {group, expiry_timestamp}
+timed_permissions: {}

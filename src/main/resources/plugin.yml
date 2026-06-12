@@ -1,0 +1,37 @@
+name: DonateCases
+version: 1.0.0
+main: ua.donatecases.DonateCases
+api-version: 1.21
+author: YourName
+description: Donate cases with privileges, kits and timed permissions
+
+softdepend:
+  - Vault
+  - Multiverse-Core
+  - LuckPerms
+
+commands:
+  case:
+    description: Main donate case command
+    usage: /case <open|create|list|give|reload>
+    permission: donatecases.use
+
+permissions:
+  donatecases.use:
+    description: Basic case usage
+    default: true
+  donatecases.admin:
+    description: Admin access (create, give, reload)
+    default: op
+  donatecases.open.privilege:
+    description: Open privilege cases
+    default: true
+  donatecases.open.whale:
+    description: Open whale cases
+    default: true
+  donatecases.open.timed_long:
+    description: Open timed long (3 weeks) cases
+    default: true
+  donatecases.open.timed_short:
+    description: Open timed short (3 days) cases
+    default: true
