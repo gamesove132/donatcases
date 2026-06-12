@@ -273,7 +273,6 @@ public class CaseManager {
         player.playSound(player.getLocation(),
                 org.bukkit.Sound.ENTITY_PLAYER_LEVELUP, 1f, 1f);
     }
-
     /** Дефолтні нагороди для кожного типу кейсу */
     private List<CaseReward> buildDefaultRewards(CaseType type) {
         List<CaseReward> list = new ArrayList<>();
