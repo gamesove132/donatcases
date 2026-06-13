@@ -268,7 +268,7 @@ public class CaseManager {
         if (dc.getBlockLocation() != null) {
             Location loc = dc.getBlockLocation().clone().add(0.5, 1.2, 0.5);
             player.getWorld().spawnParticle(
-                    org.bukkit.Particle.FIREWORKS_SPARK, loc, 40, 0.3, 0.3, 0.3, 0.1);
+                    org.bukkit.Particle.FIREWORK, loc, 40, 0.3, 0.3, 0.3, 0.1);
         }
         player.playSound(player.getLocation(),
                 org.bukkit.Sound.ENTITY_PLAYER_LEVELUP, 1f, 1f);
